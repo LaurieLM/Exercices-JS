@@ -1,4 +1,4 @@
-let chiffre1 = 10;
+let chiffre1 = 3;
 let chiffre2 = 1;
 let button_addition = document.getElementById('button_addition')
 
