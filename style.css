@@ -18,7 +18,10 @@ input {
 
 #message_error1, #message_error2 {
     color: red;
+    visibility: hidden;
 }
+
+
 
 #addition, button {
     width: 155px;
@@ -28,4 +31,9 @@ input {
     border-radius: 5px;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
+}
+
+#resultat_affichage {
+    font-size: 65px;
 }
