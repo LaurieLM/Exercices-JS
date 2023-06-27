@@ -1,9 +1,18 @@
-let chiffre1 = 3;
-let chiffre2 = 1;
-let button_addition = document.getElementById('button_addition')
+let input1 = document.querySelector('#input1');
+let input2 = document.querySelector('#input2');
+let chiffre1 = 0;
+let chiffre2 = 0;
 
-// console.log(chiffre1);
-// console.log(chiffre2);
+input1.addEventListener('input', function () {
+    chiffre1 = this.value;
+    console.log(chiffre1);
+});
+input2.addEventListener('input', function () {
+    chiffre2 = this.value;
+    console.log(chiffre2);
+});
+
+let button_addition = document.getElementById('button_addition')
 
 if (chiffre1 < 0 || chiffre1 > 9 || chiffre2 < 0 || chiffre2 > 9) {
     document.getElementById('message_error1').style.visibility = "visible";
@@ -24,8 +33,3 @@ button_addition.addEventListener('click', event => {
         resultat_elem.appendChild(resultat_nombre);
     };   
 });
-    
-// if (chiffre1 = null || chiffre1 < 0 || chiffre1 > 9 || chiffre2 < 0 || chiffre2 > 9) {
-//     document.getElementById('message_error2').style.visibility = "visible";
-
-// };
